@@ -1,0 +1,42 @@
+1- start your react project by << npx create-react-app .(dot(same folder) or folder name)>>
+
+2- delete all files except app.js index.js index.html robots.txt
+
+3- install npm packages
+npm install flux -legacy-peer-deps react-router-dom@5.0.0 bootstrap@4.3.1
+npm install -D cross-env@5.2.0 npm-run-all@4.1.5 json-server@0.15.0
+
+4-copy script from the folder dont copy me
+
+5-copy tools and past it beside src and public folder
+
+7- start the project by typing <<npm run start>>
+
+6- delete the files which throw error in index.js
+
+
+فایل دیبی جیسون یه شبه دیتابیسه که ما میتونیم روش کار کنیم
+خرابش کنیم و از اول برگش گردونیم
+
+اگه بخوایم به صورت هارد کد کد هامونو بنویسیم اصلا نیازی به سرور
+یه هیچ کدوم از اون پکیج هایی که نصب کردیم نداریم و کافیه از 
+npx create-react-app
+استفاده کنیم ولی استفاده از سرور بخاطر استفاده از 
+ای پی آی هستش و واقعا از سرور اطلاعاتمونو بگیریم
+تفاوت این دیتای ای پی ای و هارد کد شده در تفاوت ادیت و ایناست و هر 
+بار که ران شه ازول دوباره میادشون و عوض نمیشن اگه البته با کدش بازی نکنیم
+
+در واقع ما به صورت مجازی یه پورت رو میدیم بهش مثلا
+localhost : 3000
+ولی اخر سری ادرس رو عوض میکنیم و ادرس سرور واقعی رو بهش میدیم.
+++++
+منظورمون از جی اس ایکس اینه که ما کدی های اچتملمون رو داخل جاوااسکریپت مینویسم و تو این پروسه برخی چیزا عوض میشن مثلا
+for => htmlFor
+class => className
+و کارش کامپایل کد اچتمله به جی اس ولی خب میتونیم همون کدهای جی اس رو بنویسیم ولی خب سخت تره
+
+حالا بابل میاد این ترجمه رو انجام میده  واسمون 
++++++
+
+کامپوننت های ریکت همیشه حرف اولشون بزرگه
++++
