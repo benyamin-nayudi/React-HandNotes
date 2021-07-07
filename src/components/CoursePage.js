@@ -1,44 +1,33 @@
 import { useState, useEffect } from "react";
 import { getCourses } from "../api/courseApi";
-import HomePage from "../components/HomePage"
+import { Link } from "react-router-dom";
+import CourseList from "./CourseList";
 
-const CoursePage = () => {
+
+
+const CoursePage = ({course}) => {
 
     const [courses, setCourses] = useState([])
-
-
+    
+    
     useEffect(() => {
         getCourses().then(function (_courses) {
             setCourses(_courses)
         })
     }, [])
-
-
+    
+    
     return (
         <>
-            <table className="table">
-                <thead>
-                    <tr>
-                        <th>Author Id</th>
-                        <th>Category</th>
-                        <th>Slug</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {courses.map(course => {
-                        return (
-                            <tr key={course.id}>
-                                <td>{course.authorId}</td>
-                                <td>{course.category}</td>
-                                <td>{course.slug}</td>
-                            </tr>
-                        )
-                    })}
-                </tbody>
-            </table>
-            {/* <HomePage courses={courses} /> */}
-        </>
-    )
-}
+        
+        <h1>THIS IS COURSE PAGE</h1>
+        <Link className="btn btn-danger" to="/course">go to courses</Link>
+        <CourseList courses={courses} />
 
-export default CoursePage;
+        
+        <h1>THIS IS COURSE PAGE</h1>
+        </>
+            )
+}
+                    
+    export default CoursePage;
